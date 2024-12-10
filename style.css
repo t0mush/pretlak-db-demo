@@ -1,29 +1,92 @@
-body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    background-color: #f9f9f9;
-}
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.card h2 {
+/* Globálne nastavenia */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Hlavný obsah */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+header, footer {
+    background-color: #2C3E50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+header h1, footer p {
+    margin-bottom: 0.5rem;
+}
+
+/* Karty kandidátov */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
 .card p {
+    font-size: 1rem;
     color: #555;
+    margin-bottom: 1rem;
 }
+
 .card a {
-    color: #007BFF;
+    font-size: 1rem;
+    color: #2C3E50;
     text-decoration: none;
+    margin-top: 1rem;
+    font-weight: bold;
 }
-input[type="file"] {
-    margin: 20px 0;
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Základný responzívny dizajn */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
 }
