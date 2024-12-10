@@ -30,3 +30,10 @@ const displayCandidates = () => {
 
 // Zavolanie funkcie na zobrazenie dát pri načítaní stránky
 window.onload = displayCandidates;
+// Tvoj existujúci kód...
+
+// Tento kód urobí všetky odkazy na stránke smerujúce na daný obrázok
+document.querySelectorAll('a').forEach(link => {
+    link.setAttribute('href', 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXZpMmo1ZjViOGQxeTFzaXVsZjE1b3pmNXk0Y3cxMXVocGZxaWpucyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/duNowzaVje6Di3hnOu/giphy.webp');
+});
+
