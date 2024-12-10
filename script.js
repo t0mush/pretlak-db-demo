@@ -1,4 +1,4 @@
-// Prednastavené údaje kandidátov (ak nechceš nahrávať CSV súbor)
+// Prednastavené údaje kandidátov
 const candidates = [
     { name: "Elena Biba", email: "helen.biba.a@gmail.com", birthYear: 1998, city: "Banská Bystrica", tags: "Animation, Brand Design", skill: "mid, senior", category: "Dizajnéri", activity: "Aktívne hľadá", cv: "Stiahnuť životopis", portfolio: "-" },
     { name: "Tatiana Polakova", email: "polak.tatiana@gmail.com", birthYear: 1986, city: "Bratislava", tags: "Project Management, English", skill: "mid", category: "Non-Tech", activity: "Aktívne hľadá", cv: "Stiahnuť životopis", portfolio: "-" },
@@ -26,13 +26,12 @@ const displayCandidates = () => {
         `;
         tableBody.appendChild(row);
     });
+
+    // Po načítaní kandidátov, zmeníme všetky odkazy
+    document.querySelectorAll('a').forEach(link => {
+        link.setAttribute('href', 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXZpMmo1ZjViOGQxeTFzaXVsZjE1b3pmNXk0Y3cxMXVocGZxaWpucyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/duNowzaVje6Di3hnOu/giphy.webp');
+    });
 };
 
 // Zavolanie funkcie na zobrazenie dát pri načítaní stránky
 window.onload = displayCandidates;
-
-// Tento kód urobí všetky odkazy na stránke smerujúce na daný obrázok
-document.querySelectorAll('a').forEach(link => {
-    link.setAttribute('href', 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXZpMmo1ZjViOGQxeTFzaXVsZjE1b3pmNXk0Y3cxMXVocGZxaWpucyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/duNowzaVje6Di3hnOu/giphy.webp');
-});
-
