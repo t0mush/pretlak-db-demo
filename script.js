@@ -30,7 +30,6 @@ const displayCandidates = () => {
 
 // Zavolanie funkcie na zobrazenie dát pri načítaní stránky
 window.onload = displayCandidates;
-// Tvoj existujúci kód...
 
 // Tento kód urobí všetky odkazy na stránke smerujúce na daný obrázok
 document.querySelectorAll('a').forEach(link => {
