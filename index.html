@@ -3,17 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uchádzači o zamestnanie</title>
-    <link rel="stylesheet" href="style.css">  <!-- Cesta k tvojmu CSS súboru -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <title>Pretlak DB Demo</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@900&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Uchádzači o zamestnanie</h1>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="https://pretlak.com/images/logo/logo_1.svg" alt="Pretlak Logo">
+        </div>
+    </header>
 
+    <!-- Main content -->
     <div class="container">
-        <!-- Kandidáti sa budú načítavať sem -->
+        <h1>Uchádzači</h1>
+        <table id="candidates-table">
+            <thead>
+                <tr>
+                    <th>Meno</th>
+                    <th>E-mail</th>
+                    <th>Rok narodenia</th>
+                    <th>Mesto</th>
+                    <th>Tagy</th>
+                    <th>Skill</th>
+                    <th>Kategória</th>
+                    <th>Aktivita uchádzača</th>
+                    <th>Životopis</th>
+                    <th>Portfólio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamicky sa pripoja údaje z JavaScriptu -->
+            </tbody>
+        </table>
     </div>
 
-    <script src="script.js"></script>  <!-- Cesta k tvojmu JS súboru -->
+    <!-- Script for dynamic content -->
+    <script src="script.js"></script>
 </body>
 </html>
