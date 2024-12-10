@@ -3,14 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uchádzači o zamestnanie</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <title>PreTlaky Kandidáti</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Uchádzači o zamestnanie</h1>
-    <input type="file" id="file-input" />
-    <div class="container"></div>
+
+    <header>
+        <div class="container">
+            <h1>Kandidáti PreTlaku</h1>
+            <p>Prehľad kandidátov na spoluprácu.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="cards-container" id="candidates-container">
+                <!-- Kandidáti budú vložení sem -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pretlak</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
