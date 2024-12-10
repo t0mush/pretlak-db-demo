@@ -27,9 +27,10 @@ const displayCandidates = () => {
         tableBody.appendChild(row);
     });
 
-    // Po načítaní kandidátov, zmeníme všetky odkazy
+    // Po načítaní kandidátov, zmeníme všetky odkazy a pridáme 'target="_blank"'
     document.querySelectorAll('a').forEach(link => {
         link.setAttribute('href', 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXZpMmo1ZjViOGQxeTFzaXVsZjE1b3pmNXk0Y3cxMXVocGZxaWpucyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/duNowzaVje6Di3hnOu/giphy.webp');
+        link.setAttribute('target', '_blank');  // Otvorí odkaz na novej karte
     });
 };
 
